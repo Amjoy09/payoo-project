@@ -1,11 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Welcome to HOMEPAGE</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Mobile project HOMEPAGE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="h-[100vh] max-w-[450px] mx-auto">
+    <header class="bg-[#ffffff]">
+      <nav
+        class="flex justify-between w-[450px] h-[84px] items-center py-[11px] px-[24px] border-b-1 border-gray-200"
+      >
+        <div class="nav-left flex gap-2">
+          <img
+            class="nav-img w-12 h-11"
+            src="./Payoo-MFS-Resources/assets/Group.png"
+            alt=""
+          />
+
+          <div class="nav-text">
+            <h2 class="balance-number text-[#080808e6] text-lg font-bold">
+              $<span>45000</span>
+            </h2>
+            <p class="balance-text text-sm text-[#08080880]">
+              Available Balance
+            </p>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <button
+            class="nav-btn rounded-lg py-2 px-3 text-[#08080880] text-sm font-[400px] bg-[#ffffff] border-1 border-gray-200 hover:cursor-pointer"
+          >
+            <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>
+            Logout
+          </button>
+        </div>
+      </nav>
+
+      <!-- Welcome to PAYOO section... -->
+
+      <section class="welcome py-6">
+        <h2 class="text-[#080808] text-[24px] font-bold mb-3">
+          🔥 Welcome to Payooo!
+        </h2>
+        <p class="text-[#08080880] text-[16px] font-normal">
+          Enjoy easy and convenient financial services with us. Cashout charge
+          is low and
+        </p>
+        <!-- Card Container... -->
+
+        <div class="card-container grid grid-cols-3 gap-5 mt-6">
+
+          <div class=" py-[20px] border-1 border-gray-200 rounded-lg">
+            <img class="w-[24px] mx-auto"
+              src="./Payoo-MFS-Resources/assets/wallet1.png"
+              alt=""
+            />
+            <div>
+              <p class="card-text font-semibold text-sm text-[#080808b3] text-center"> 
+                Add Money
+              </p>
+
+            </div>
+          </div>
+          <div class="card py-[20px] border-1 border-gray-200 rounded-lg">
+            <img
+              class="w-[24px] mx-auto"
+              src="./Payoo-MFS-Resources/assets/wallet1.png"
+              alt=""
+            />
+            <div>
+              <p
+                class="card-text font-semibold text-sm text-[#080808b3] text-center"
+              >
+                Add Money
+              </p>
+            </div>
+          </div>
+          <div class="rounded-lg py-[20px] border-1 border-gray-200">
+            <img
+              class="w-[24px] mx-auto"
+              src="./Payoo-MFS-Resources/assets/wallet1.png"
+              alt=""
+            />
+            <div>
+              <p
+                class="card-text font-semibold text-sm text-[#080808b3] text-center"
+              >
+                Add Money
+              </p>
+            </div>
+          </div>
+          <div class="rounded-lg py-[20px] border-1 border-gray-200">
+            <img
+              class="w-[24px] mx-auto"
+              src="./Payoo-MFS-Resources/assets/wallet1.png"
+              alt=""
+            />
+            <div>
+              <p
+                class="card-text font-semibold text-sm text-[#080808b3] text-center"
+              >
+                Add Money
+              </p>
+            </div>
+          </div>
+          <div class="rounded-lg py-[20px] border-1 border-gray-200">
+            <img
+              class="w-[24px] mx-auto"
+              src="./Payoo-MFS-Resources/assets/wallet1.png"
+              alt=""
+            />
+            <div>
+              <p
+                class="card-text font-semibold text-sm text-[#080808b3] text-center"
+              >
+                Add Money
+              </p>
+            </div>
+          </div>
+          <div class="rounded-lg py-[20px] border-1 border-gray-200">
+            <img
+              class="w-[24px] mx-auto"
+              src="./Payoo-MFS-Resources/assets/wallet1.png"
+              alt=""
+            />
+            <div>
+              <p
+                class="card-text font-semibold text-sm text-[#080808b3] text-center"
+              >
+                Add Money
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+
+                 <!-- Add Money Section... -->
+
+      <div class="add-money bg-[#f4f5f7] py-6">
+             <h2 class="font-bold text-lg text-[#080808e6] mb-4 ml-7">Add Money</h2>
+        <div class="flex justify-center">
+
+       <form
+            class="w-[400px] bg-[#ffffff] py-[32px] px-[43px] rounded-2xl"
+          >
+            <label class="font-semibold text-lg">Select a Bank</label>
+            <br />
+            <select  id="bank-name" class="focus:ring-2 py-[16px] px-[20px] my-4 rounded-4xl w-full bg-[#F4F5F7] border-none"
+              type="text" name="">
+
+             <option value="">Chose a Bank</option>
+             <option value="BRAC Bank">BRACK Bank</option>
+             <option value="AB Bank">AB Bank</option>
+             <option value="Bank Asia">Bank Asia</option>
+             <option value="Dutch Bangla Bank">Dutch Bangla Bank</option>
+             <option value="Eastern Bank">Eastern Bank</option>
+            </select>
+              
+            <br />
+            
+            <label class="font-semibold text-lg" for="">Bank Account Number</label>
+            
+            <input
+              id="bank-acc"
+              class="py-[16px] pl-4 mt-4 w-full rounded-4xl bg-[#F4F5F7] border-none"
+              type="text"
+              placeholder="Enter 11 Digit Number"
+            />
+        
+       <br /> <br>
+        <label class="font-semibold text-lg" for="">Amount to Add</label>
+            <br />
+            <input
+              id="added-amount"
+              class="py-[16px] pl-4 mt-4 w-full rounded-4xl bg-[#F4F5F7] border-none"
+              type="text"
+              placeholder="Add Amount to Withdraw"
+            />
+            <br /><br />
+            
+            
+            <label class="font-semibold text-lg" for="">Pin Number</label>
+            
+            <input
+              id="pin-num"
+              class="py-[16px] pl-4 mt-4 w-full rounded-4xl bg-[#F4F5F7] border-none"
+              type="text"
+              placeholder="Enter 4 Digit Pin Number"
+            />
+            
+            <input
+              id="btn-add-money"
+              class="mt-7 border-none rounded-4xl bg-[#0874F2] text-[#ffffff] text-xl font-semibold py-[16px] text-center w-full hover:cursor-pointer"
+              type="button"
+              value="Add Money"
+            />
+          </form>
+          
+        </div>
+      </div>
+    </main>
+
+    <script src="./Script/home.js"></script>
+  </body>
 </html>
